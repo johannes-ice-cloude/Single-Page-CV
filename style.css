@@ -1,0 +1,360 @@
+/* ================================
+   CV - Main Stylesheet
+   ================================ */
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page */
+body {
+    background: #ffffff;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+/* Main CV container */
+main {
+    width: 100%;
+    max-width: 1055px;
+    min-height: 1485px;
+    margin: 16px auto;
+    padding: 88px 84px 70px 84px;
+
+    border: 3px solid #222222;
+    background: #ffffff;
+}
+
+/* ================================
+   Header
+   ================================ */
+
+main > header {
+    padding-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Horizontal line above the name */
+main > header::before {
+    content: "";
+    display: block;
+
+    width: 75%;
+    height: 3px;
+
+    margin: 0 0 30px 0;
+
+    background-color: #222222;
+}
+
+h1 {
+    margin: 0 0 12px 0;
+
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: #222222;
+}
+
+main > header > p {
+    margin: 0 0 19px 0;
+
+    font-size: 21px;
+    line-height: 1.3;
+
+    color: #229b42;
+}
+
+address {
+    margin: 0;
+
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.48;
+}
+
+address a {
+    color: #222222;
+    text-decoration: none;
+}
+
+
+/* ================================
+   General Sections
+   ================================ */
+
+section {
+    margin: 0 0 29px 0;
+}
+
+section > h2 {
+    margin: 0 0 11px 0;
+
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.3;
+
+    color: #229b42;
+}
+
+section p {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/* ================================
+   Skills
+   ================================ */
+
+#skills-heading + p {
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   Education
+   ================================ */
+
+#education-heading {
+    margin-bottom: 12px;
+}
+
+article {
+    margin: 0;
+}
+
+article h3 {
+    margin: 0 0 3px 0;
+
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.35;
+
+    color: #0876d1;
+}
+
+article p {
+    margin: 0 0 8px 0;
+
+    font-size: 20px;
+    line-height: 1.45;
+}
+
+
+/* ================================
+   Experience
+   ================================ */
+
+#experience-heading {
+    margin-bottom: 18px;
+}
+
+#experience-heading + article {
+    margin-bottom: 23px;
+}
+
+#experience-heading + article h3,
+#experience-heading + article + article h3 {
+    margin-bottom: 4px;
+}
+
+/* Dates */
+time {
+    font-size: 20px;
+}
+
+/* Achievement lists */
+article ul {
+    margin: 12px 0 13px 23px;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 1.55;
+}
+
+article li {
+    padding-left: 1px;
+}
+
+/* Skills under each job */
+article ul + p {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+article ul + p strong {
+    font-weight: 400;
+}
+
+
+/* ================================
+   Second Experience Entry
+   ================================ */
+
+#experience-heading + article + article {
+    margin-top: 0;
+}
+
+
+/* ================================
+   Across the Internet
+   ================================ */
+
+#internet-heading {
+    margin-bottom: 8px;
+}
+
+#internet-heading + p {
+    margin: 0;
+
+    font-size: 20px;
+}
+
+#internet-heading + p a {
+    color: #222222;
+    text-decoration: none;
+}
+
+#internet-heading + p a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   Responsive Design
+   ================================ */
+
+/* Tablets */
+@media (max-width: 900px) {
+    main {
+        max-width: 95%;
+        min-height: auto;
+
+        padding: 60px 55px 55px 55px;
+    }
+
+    main > header::before {
+        width: 75%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    main > header > p,
+    section > h2,
+    article h3 {
+        font-size: 20px;
+    }
+
+    address,
+    section p,
+    article p,
+    article ul,
+    article ul + p,
+    time {
+        font-size: 18px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    main {
+        width: calc(100% - 20px);
+        max-width: none;
+
+        margin: 10px;
+
+        padding: 40px 28px 40px 28px;
+
+        border-width: 2px;
+    }
+
+    main > header {
+        margin-bottom: 25px;
+    }
+
+    main > header::before {
+        width: 100%;
+        height: 2px;
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    main > header > p {
+        font-size: 18px;
+    }
+
+    address,
+    section p,
+    article p,
+    article ul,
+    article ul + p,
+    time {
+        font-size: 17px;
+    }
+
+    section > h2,
+    article h3 {
+        font-size: 19px;
+    }
+
+    article ul {
+        margin-left: 20px;
+    }
+}
+
+
+/* ================================
+   Print / PDF
+   ================================ */
+
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    body {
+        background: #ffffff;
+    }
+
+    main {
+        width: 100%;
+        max-width: none;
+        min-height: 100vh;
+
+        margin: 0;
+
+        border: 3px solid #222222;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
